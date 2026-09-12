@@ -90,20 +90,18 @@ gsap.utils.toArray('.card-3d').forEach(card => {
 });
 
 // Project Cards Animation
-gsap.utils.toArray('.project-card').forEach((card, index) => {
+gsap.utils.toArray('.project-card').forEach((card) => {
     gsap.fromTo(card, 
-        { y: 80, opacity: 0, rotationX: 15 },
+        { y: 60, opacity: 0 },
         {
             y: 0,
             opacity: 1,
-            rotationX: 0,
-            duration: 1,
-            delay: index * 0.2,
+            duration: 0.6,
             ease: "power3.out",
             scrollTrigger: {
                 trigger: card,
-                start: "top 80%",
-                toggleActions: "play none none reverse"
+                start: "top 90%",
+                toggleActions: "play none none none"
             }
         }
     );

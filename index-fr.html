@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AHMED AISSA - Portfolio d'Ingénieur Logiciel Amélioré</title>
+<link rel="icon" href="./assets//images/letter-a.png">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="stylesheet" href="./assets/css/styles2.css">
+<link rel="stylesheet" href="./assets/css/themes.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./assets/js/theme.js"></script>
+
+
+</head>
+<body class="dark" id="body">
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollProgress"></div>
+
+    <!-- Enhanced Theme Toggle -->
+   <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon text-2xl" id="themeIcon" style="color: var(--text-primary);"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dynamic backdrop-blur-lg border-b border-dynamic" style="display: none;" id="navbar">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold gradient-text-primary font-playfair">AA</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index-fr.html" class="text-dynamic hover:text-blue-400 transition-colors">Accueil</a>
+                    <a href="pages/about-fr.html" class="text-dynamic hover:text-blue-400 transition-colors">À Propos</a>
+                    <a href="pages/skills-fr.html" class="text-dynamic hover:text-blue-400 transition-colors">Compétences</a>
+                    <a href="pages/projects-fr.html" class="text-dynamic hover:text-blue-400 transition-colors">Projets</a>
+                    <a href="pages/contact-fr.html" class="text-dynamic hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="morphing-bg"></div>
+
+        <!-- Enhanced Floating Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="floating-element w-20 h-20 top-20 left-20"></div>
+            <div class="floating-element w-16 h-16 top-40 right-32"></div>
+            <div class="floating-element w-24 h-24 bottom-32 left-40"></div>
+            <div class="floating-element w-12 h-12 bottom-20 right-20"></div>
+        </div>
+
+        <div class="text-center z-10 px-4 max-w-6xl mx-auto">
+            <!-- Enhanced Profile Section -->
+            <div class="profile-container mb-12" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="profile-inner">
+                    <div class="profile-image">
+                        <img src="assets/images/me2.jpeg" alt="Ahmed Aissa" class="profile-photo"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-initials font-playfair text-6xl font-bold text-white" style="display: none;">AA</div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-6xl md:text-8xl font-bold mb-8 glitch-text font-playfair text-white"
+                data-text="AHMED AISSA"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                AHMED AISSA
+            </h1>
+
+            <div class="mb-8" data-aos="fade-up" data-aos-delay="400">
+                <p class="text-2xl md:text-4xl mb-4 font-poppins gradient-text-accent" id="typingText">Développeur Full Stack</p>
+            </div>
+
+            <p class="text-lg md:text-xl mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed text-white"
+               data-aos="fade-up"
+               data-aos-delay="600">
+                Transformer les idées audacieuses en applications intelligentes et évolutives grâce à l'innovation, un design épuré et le pouvoir de la technologie.
+            </p>
+
+            <!-- <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8"
+                 data-aos="fade-up"
+                 data-aos-delay="800">
+                <a href="pages/about-fr.html" class="liquid-btn gradient-primary text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-400 transform hover:scale-110">
+    <i class="fas fa-user mr-2"></i>Qui suis-je ?
+</a>
+                <a href="pages/projects-fr.html" class="liquid-btn border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-400 transform hover:scale-110">
+                    <i class="fas fa-code mr-2"></i>Voir les Projets
+                </a>
+            </div> -->
+
+            <!-- Social Media Icons -->
+            <div class="social-icons" data-aos="fade-up" data-aos-delay="1000">
+                <a href="https://www.linkedin.com/in/ahmed-aissa-ba7b75293/" target="_blank" class="social-icon social-linkedin" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/AHMEDDAISSA" target="_blank" class="social-icon social-github" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:aisssaahmed9@gmail.com" class="social-icon social-email" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- Enhanced Navigation Links with Modern Animations -->
+            <div class="mt-16" data-aos="fade-up" data-aos-delay="1200">
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="pages/about-fr.html" class="nav-button nav-about">
+                        <i class="fas fa-user"></i>À Propos
+                    </a>
+                    <a href="pages/skills-fr.html" class="nav-button nav-skills">
+                        <i class="fas fa-cogs"></i>Compétences
+                    </a>
+                    <a href="pages/projects-fr.html" class="nav-button nav-projects">
+                        <i class="fas fa-briefcase"></i>Projets
+                    </a>
+                    <a href="pages/contact-fr.html" class="nav-button nav-contact">
+                        <i class="fas fa-envelope"></i>Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.getElementById('body');
+        const themeIcon = document.getElementById('themeIcon');
+
+        function setTheme(theme) {
+    if (theme === 'light') {
+        body.classList.remove('dark');
+        body.classList.add('light');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+    } else {
+        body.classList.remove('light');
+        body.classList.add('dark');
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+    }
+    // Save theme to localStorage
+    localStorage.setItem('theme', theme);
+}
+
+// Load theme on page load
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    setTheme(savedTheme);
+}
+
+// Toggle theme on button click
+themeToggle.addEventListener('click', () => {
+    const currentTheme = body.classList.contains('light') ? 'light' : 'dark';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+});
+
+// Load theme when page loads
+loadTheme();
+
+
+
+
+        // Scroll Progress
+        window.addEventListener('scroll', () => {
+            const scrollProgress = document.getElementById('scrollProgress');
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            scrollProgress.style.width = scrollPercent + '%';
+        });
+
+        // Navbar show/hide on scroll
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > 100) {
+                navbar.style.display = 'block';
+                if (scrollTop > lastScrollTop) {
+                    navbar.style.transform = 'translateY(-100%)';
+                } else {
+                    navbar.style.transform = 'translateY(0)';
+                }
+            } else {
+                navbar.style.display = 'none';
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+        // Typing Animation
+        const typingText = document.getElementById('typingText');
+        const texts = [
+            'Ingénieur Logiciel',
+            'Développeur Full Stack',
+            'Résolveur de Problèmes',
+            'Passionné du Code'
+        ];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentText = texts[textIndex];
+
+            if (isDeleting) {
+                typingText.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                }
+            } else {
+                typingText.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+
+                if (charIndex === currentText.length) {
+                    isDeleting = true;
+                    setTimeout(type, 2000);
+                    return;
+                }
+            }
+
+            setTimeout(type, isDeleting ? 50 : 100);
+        }
+
+        // Start typing animation
+        setTimeout(type, 1000);
+
+        // GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Enhanced navigation buttons animation
+        gsap.from('.nav-button', {
+            duration: 1.2,
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            ease: "power3.out",
+            delay: 1.5
+        });
+
+        // Parallax effect for floating elements
+        gsap.to('.floating-element', {
+            y: -50,
+            rotation: 360,
+            duration: 3,
+            ease: "power1.inOut",
+            yoyo: true,
+            repeat: -1,
+            stagger: 0.5
+        });
+
+        // Enhanced hover effects for navigation buttons
+        document.querySelectorAll('.nav-button').forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                gsap.to(button, {
+                    duration: 0.3,
+                    scale: 1.05,
+                    y: -8,
+                    ease: "power2.out"
+                });
+            });
+
+            button.addEventListener('mouseleave', () => {
+                gsap.to(button, {
+                    duration: 0.3,
+                    scale: 1,
+                    y: 0,
+                    ease: "power2.out"
+                });
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+    <!-- <script src="assets/js/chatbot.js"></script> -->
+</body>
+</html>

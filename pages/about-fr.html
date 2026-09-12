@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - AHMED AISSA</title>
+    <link rel="icon" href="../assets//images/letter-a.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/themes.css">
+</head>
+<body class="dark" id="body">
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollProgress"></div>
+
+    <!-- Enhanced Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon text-2xl" id="themeIcon" style="color: var(--text-primary);"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dynamic backdrop-blur-lg border-b border-dynamic">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold gradient-text-primary font-playfair">
+                <a href="../index-fr.html">
+                    <span style="font-style: italic; font-family: 'Playfair Display', serif;">AHMED AISSA</span>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="about-fr.html" class="text-blue-400 font-semibold">À Propos</a>
+                <a href="skills-fr.html" class="text-dynamic hover:text-blue-400 transition-colors">Compétences</a>
+                <a href="projects-fr.html" class="text-dynamic hover:text-blue-400 transition-colors">Projets</a>
+                <a href="contact-fr.html" class="text-dynamic hover:text-blue-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-dynamic" id="mobileMenuBtn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobileMenu">
+            <div class="px-4 pt-2 pb-4 space-y-3 bg-dynamic border-t border-dynamic">
+                <a href="about-fr.html" class="block text-blue-400 font-semibold py-2">À Propos</a>
+                <a href="skills-fr.html" class="block text-dynamic hover:text-blue-400 transition-colors py-2">Compétences</a>
+                <a href="projects-fr.html" class="block text-dynamic hover:text-blue-400 transition-colors py-2">Projets</a>
+                <a href="contact-fr.html" class="block text-dynamic hover:text-blue-400 transition-colors py-2">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Enhanced About Section -->
+    <section id="about" class="py-24 bg-dynamic backdrop-blur-lg min-h-screen pt-32">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-5xl md:text-6xl font-bold text-center mb-20 gradient-text-primary font-playfair"
+                data-aos="fade-down">
+                À Propos
+            </h2>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right" data-aos-duration="800">
+                  <h3 class="text-3xl md:text-4xl font-bold mb-8 text-dynamic font-poppins">
+    Ingénieur Logiciel
+</h3>
+        <div class="space-y-6 text-lg text-dynamic-secondary leading-relaxed">
+  <p>
+    Je suis Ahmed Aissa, un Ingénieur Logiciel titulaire d'une Licence en Informatique de <strong>ISIMA</strong>, actuellement en train de poursuivre mon diplôme d'Ingénieur à <strong>ESPRIM</strong>. Je construis des applications web et mobiles évolutives, animé par une passion pour l'architecture propre et la résolution de problèmes réels par la technologie.
+  </p>
+  <p>
+    De la création d'interfaces front-end responsives à l'ingénierie de systèmes back-end robustes, je transforme les idées en solutions fiables, prêtes pour la production. Je crois qu'un logiciel n'est pas seulement fonctionnel — il doit être maintenable, efficace et construit avec une intention précise.
+  </p>
+  <p>
+    Une citation qui me motive chaque jour :
+    <br><em>"Pour obtenir quelque chose que tu n'as jamais eu, tu dois faire quelque chose que tu n'as jamais fait."</em>
+  </p>
+</div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-duration="800">
+    <div class="bg-dynamic-secondary backdrop-blur-lg rounded-3xl p-8 border border-dynamic card-3d">
+        <h4 class="text-2xl font-semibold mb-8 gradient-text-accent font-poppins">Informations Rapides</h4>
+        <div class="space-y-6">
+            <div class="flex items-center group" data-aos="fade-left" data-aos-delay="100">
+                <div class="w-14 h-14 gradient-primary rounded-full flex items-center justify-center mr-4 transition-transform group-hover:scale-110 group-hover:rotate-12">
+                    <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-dynamic font-semibold">Localisation</p>
+                    <p class="text-dynamic-muted">Monastir, Tunisie</p>
+                </div>
+            </div>
+            <div class="flex items-center group" data-aos="fade-left" data-aos-delay="200">
+                <div class="w-14 h-14 gradient-accent rounded-full flex items-center justify-center mr-4 transition-transform group-hover:scale-110 group-hover:rotate-12">
+                    <i class="fas fa-graduation-cap text-white text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-dynamic font-semibold">Éducation</p>
+                    <p class="text-dynamic-muted">Étudiant Ingénieur – ESPRIM</p>
+                </div>
+            </div>
+            <div class="flex items-center group" data-aos="fade-left" data-aos-delay="300">
+                <div class="w-14 h-14 gradient-tertiary rounded-full flex items-center justify-center mr-4 transition-transform group-hover:scale-110 group-hover:rotate-12">
+                    <i class="fas fa-code-branch text-white text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-dynamic font-semibold">Domaine</p>
+                    <p class="text-dynamic-muted">Intelligence Artificielle</p>
+                </div>
+            </div>
+            <div class="flex items-center group" data-aos="fade-left" data-aos-delay="400">
+                <div class="w-14 h-14 gradient-success rounded-full flex items-center justify-center mr-4 transition-transform group-hover:scale-110 group-hover:rotate-12">
+                    <i class="fas fa-bolt text-white text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-dynamic font-semibold">Approche</p>
+                    <p class="text-dynamic-muted">Solutions de Code Propre</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <!-- Navigation to other sections -->
+            <div class="text-center mt-20">
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a href="skills-fr.html" class="liquid-btn gradient-primary text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-400 transform hover:scale-110">
+                        <i class="fas fa-cogs mr-2"></i>Voir les Compétences
+                    </a>
+                    <a href="projects-fr.html" class="liquid-btn border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-400 transform hover:scale-110">
+                        <i class="fas fa-briefcase mr-2"></i>Voir les Projets
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/components.js"></script>
+</body>
+</html>

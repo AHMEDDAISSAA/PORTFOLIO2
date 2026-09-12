@@ -3,9 +3,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Initialize AOS
 AOS.init({
-    duration: 1000,
+    duration: 400,
     once: true,
-    offset: 100
+    offset: 50
 });
 
 // Theme Toggle System
